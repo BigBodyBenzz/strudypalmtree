@@ -3,7 +3,7 @@
 :root {
     --main-color: #ffffff;
     --error-color: rgb(206, 29, 29);
-    --very-dark-purple: #0F001F;
+    --very-dark-purple: #black;
 }
 
 body {

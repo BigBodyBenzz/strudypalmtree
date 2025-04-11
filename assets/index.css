@@ -64,63 +64,44 @@ body {
 }
 
 .go {
-    width: 100%;
+    width: 90%;
+    box-shadow: 0px 0px 20px rgb(153, 153, 153);
     height: 50px;
-    background-color: #2E004F;
+    background-color: white;
     border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 30px;
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
-    transition: transform 0.3s ease; /* Usunięto box-shadow dla wydajności */
+    transition: 200ms;
+    margin-bottom: 20px;
     text-align: center;
     line-height: 50px;
-    color: #ffffff;
 }
 
-.go:hover {
-    transform: scale(1.05);
+.go:hover{
+    opacity: 0.5;
 }
 
-.discord {
-    cursor: pointer;
-    position: relative;
-    width: 100%;
-    height: 50px;
-    background-color: #2E004F;
-    border-radius: 10px;
-    transition: transform 0.3s ease; /* Usunięto box-shadow dla wydajności */
-    margin-bottom: 10px;
-}
-
-.discord:hover {
-    transform: scale(1.05);
-}
-
-.inner_grid {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    display: grid;
-    width: max-content;
-    height: max-content;
-    grid-template-columns: max-content max-content;
-}
-
-.discord_text {
-    margin: auto 0;
+.discord_text{
+    margin-top: auto;
+    margin-bottom: auto;
     color: white;
+    height: max-content;
     font-size: 20px;
     font-weight: 600;
     text-align: center;
     line-height: 50px;
 }
 
-.discord_image {
+.discord_image{
     width: 30px;
-    margin: auto 10px auto 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10px;
 }
 
 .made-by {

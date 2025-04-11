@@ -8,11 +8,12 @@
 
 body {
      background-image: url('https://media.giphy.com/media/RIekQfSiDbvF25ethO/giphy.gif');
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center; 
-  height: 100vh; 
-  margin: 0; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  min-height: 100vh; /* Gwarantuje, że strona zawsze ma co najmniej 100% wysokości ekranu */
+  margin: 0;
+
 
     position: relative;
     overflow-x: hidden;

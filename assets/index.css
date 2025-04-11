@@ -7,10 +7,13 @@
 }
 
 body {
-   background-image: url('https://media.giphy.com/media/JrZHAQT0CxmkPWj9LZ/giphy.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+     background-image: url('https://media.giphy.com/media/RIekQfSiDbvF25ethO/giphy.gif');
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  height: 100vh; 
+  margin: 0; 
+
     position: relative;
     overflow-x: hidden;
     margin: 0;

@@ -17,39 +17,6 @@ body {
     align-items: center;
 }
 
-/* Optymalizacja gwiazd */
-.stars {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-    will-change: transform; /* Optymalizacja animacji */
-}
-
-.star {
-    position: absolute;
-    width: 3px; /* Zmniejszono rozmiar dla lepszej wydajności */
-    height: 3px;
-    background: #ffffff;
-    border-radius: 50%;
-    animation: fall linear infinite;
-    will-change: transform, opacity; /* Optymalizacja animacji */
-}
-
-@keyframes fall {
-    0% {
-        transform: translateY(-100vh);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(100vh);
-        opacity: 0;
-    }
-}
-
 /* Kontener nagłówka */
 .header {
     display: flex;
